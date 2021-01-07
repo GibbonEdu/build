@@ -63,4 +63,16 @@ module.exports = {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
+    purge: {
+        content: [
+            "../../*.php", 
+            "../../modules/**/*.php", 
+            "../../modules/**/*.twig.html", 
+            "../../resources/**/*.twig.html", 
+        ],
+        options: {
+            safelist: ['bg-red-500', 'px-4'],
+        }
+    },
+
 };
