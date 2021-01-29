@@ -66,9 +66,11 @@ module.exports = {
     purge: {
         content: [
             "../../*.php", 
+            "../../src/**/*.php", 
             "../../modules/**/*.php", 
             "../../modules/**/*.twig.html", 
             "../../resources/**/*.twig.html", 
+            "../../themes/**/*.twig.html", 
         ],
         options: {
             safelist: ['bg-red-500', 'px-4'],
