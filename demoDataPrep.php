@@ -42,6 +42,7 @@ $tables = [
     'gibbonLibraryItem' => '',
     'gibbonOutcome' => '',
     'gibbonPerson' => '--where="gibbonPersonID>1"',
+    'gibbonPlannerEntry' => '',
     'gibbonResource' => '',
     'gibbonResourceTag' => '',
     'gibbonFormGroup' => '',
@@ -63,6 +64,9 @@ $tables = [
     'gibbonUnitBlock' => '',
     'gibbonUnitClass' => '',
     'gibbonUnitClassBlock' => '',
+    'gibbonSchoolYear' => '',
+    'gibbonSchoolYearTerm' => '',
+    'gibbonSchoolYearSpecialDay' => '',
 ];
 
 $config = $gibbon->getConfig();
