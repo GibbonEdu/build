@@ -15,5 +15,15 @@ mix
     .postCss('../assets/css/theme.css', 'css/theme.min.css')
     .options({
         processCssUrls: false,
-        postCss: [ require("tailwindcss") ],
+        postCss: [ 
+            require("tailwindcss"),
+            require('autoprefixer')(),
+            require('cssnano')({
+                preset: ['default', {
+                    discardComments: {
+                        removeAll: true,
+                    },
+                }]
+            }),
+         ],
     });
