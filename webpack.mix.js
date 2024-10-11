@@ -9,6 +9,7 @@ let mix = require('laravel-mix');
 mix
     .setPublicPath('../assets')
     .scripts([
+        '../assets/js/sortable.js',
         '../assets/js/core.js',
     ], '../assets/js/core.min.js')
     .postCss('../assets/css/core.css', 'css/core.min.css')
