@@ -14,6 +14,12 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/forms")],
   theme: {
+    screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1440px',
+      },
     extend: {
       colors: {
         yellow: colors.amber,
