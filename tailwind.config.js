@@ -7,6 +7,7 @@ module.exports = {
     "../../src/**/*.php",
     "../../modules/**/*.{php,twig.html}",
     "../../resources/templates/**/*.twig.html",
+    "../../resources/assets/js/*.js",
     "../../themes/**/*.twig.html",
   ],
   corePlugins: {
