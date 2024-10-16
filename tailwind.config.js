@@ -69,12 +69,30 @@ module.exports = {
     },
   },
 
-  //   safelist: [
-  //     "px-4",
-  //     // {
-  //     //   pattern:
-  //     //     /bg-(purple|blue|indigo|green|yellow|orange|red|pink|violet)-(100|200|300|400|500|600)/,
-  //     //   variants: ["hover"],
-  //     // },
-  //   ],
+    safelist: [
+      "px-4",
+      {
+        pattern:
+          /text-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(200|600|800)$/,
+         variants: ["hover"],
+      },
+      {
+        pattern:
+          /bg-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(400|600)$/,
+      },
+      {
+        pattern:
+          /bg-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(100|700)$/,
+          variants: ["hover"],
+      },
+      {
+        pattern:
+          /border-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(600)$/,
+          variants: ["hover"],
+      },
+      {
+        pattern:
+          /border-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(300|500)$/,
+      },
+    ],
 };
