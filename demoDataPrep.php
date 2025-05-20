@@ -88,7 +88,7 @@ $tableCount = $lineCount = 0;
 foreach ($tables as $table => $where) {
     $output = [];
 
-    exec("/Applications/MAMP/Library/bin/mysqldump --compact --skip-opt --comments --no-create-info --no-create-db --complete-insert --extended-insert -u{$config['databaseUsername']} -p{$config['databasePassword']} {$config['databaseName']} {$table} {$where}", $output);
+    exec("/Applications/MAMP/Library/bin/mysql80/bin/mysqldump --compact --skip-opt --comments --no-create-info --no-create-db --complete-insert --extended-insert -u{$config['databaseUsername']} -p{$config['databasePassword']} {$config['databaseName']} {$table} {$where}", $output);
     
     foreach ($output as $line) {
         $line = str_replace([') VALUES (', '),(0'], [")\r\nVALUES\r\n    (", "),\r\n    (0"], $line)."\r\n";
