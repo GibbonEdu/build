@@ -72,6 +72,7 @@ module.exports = {
     safelist: [
       "px-4",
       "grid-cols-1", "grid-cols-2", "grid-cols-3", "grid-cols-4", "grid-cols-5", "grid-cols-6",
+      "w-1/2","w-1/3","w-1/4","w-1/5","w-1/6","w-1/7",
       {
         pattern:
           /text-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(200|600|800)$/,
