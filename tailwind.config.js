@@ -76,12 +76,13 @@ module.exports = {
       "w-1/2","w-1/3","w-1/4","w-1/5","w-1/6","w-1/7",
       {
         pattern:
-          /text-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(200|600|800)$/,
-         variants: ["hover"],
+          /text-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(200|400|600|800)$/,
+         variants: ["hover", "dark"],
       },
       {
         pattern:
           /bg-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(400|600)$/,
+          variants: ["dark"],
       },
       {
         pattern:
@@ -95,7 +96,21 @@ module.exports = {
       },
       {
         pattern:
-          /border-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(300|500)$/,
+          /border-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(300|500|700)$/,
+          variants: ["dark"],
       },
+
+
+      {
+        pattern:
+          /bg-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(300|900)$/,
+          variants: ["hover", "dark"],
+      },
+      {
+        pattern:
+          /border-(purple|blue|indigo|sky|teal|green|yellow|orange|red|pink|fuchsia)-(400)$/,
+          variants: ["hover", "dark"],
+      },
+      
     ],
 };
